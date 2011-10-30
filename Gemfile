@@ -22,7 +22,7 @@ group :development, :test do
   gem 'rspec-rails', '2.6.1'
   gem 'jasmine', '1.1.0'
   gem "headless", "0.1.0"
-
+  gem "awesome_print"
   gem 'cucumber-rails', '1.0.4'
   gem 'capybara', '1.1.1'
   gem 'database_cleaner', '0.6.7'

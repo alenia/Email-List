@@ -1,0 +1,8 @@
+%ul
+  - @contacts.each do |contact|
+    %li
+      = contact.name
+      = contact.email
+      =link_to "edit", '#'
+      =link_to "delete", '#'
+

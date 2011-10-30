@@ -33,6 +33,7 @@ GEM
     arel (2.2.1)
     auto_tagger (0.2.3)
       capistrano (>= 2.5.3)
+    awesome_print (0.4.0)
     builder (3.0.0)
     capistrano (2.9.0)
       highline
@@ -196,6 +197,7 @@ PLATFORMS
 
 DEPENDENCIES
   auto_tagger (= 0.2.3)
+  awesome_print
   bundler
   capybara (= 1.1.1)
   coffee-rails (~> 3.1.1)
