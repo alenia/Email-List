@@ -7,7 +7,7 @@ Feature: Contacts
     And I press "+"
     Then I should see "contact saved"
     And I should be on the new contact page
-    When I follow "Rolodex"
+    When I follow "See All"
     Then I should be on the contacts page
     And I should see "Foo Barina"
   # Scenario: Editing contacts

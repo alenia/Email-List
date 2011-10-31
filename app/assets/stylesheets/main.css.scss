@@ -44,7 +44,9 @@ body {
 }
 
 .main {
-  text-align: center;
+  h2 {
+    text-align: center;
+  }
   background: $mainBkgd;
   color: $textBlue;
   margin: 50px auto;
@@ -89,7 +91,7 @@ body {
       $radius: 15px;
       text-align: center;
       padding: 0;
-      margin: 25px;
+      margin: 25px 50px;
       height: 2*$radius;
       min-width: 2*$radius;
       -webkit-border-radius: $radius;
@@ -112,7 +114,7 @@ ul.nav {
     background: $textBlue;
     list-style: none;
     display: inline-block;
-    width: 70px;
+    width: 80px;
     height: $totalHeight - 2*$padding;
     padding: $padding;
     margin: 0 10px;
