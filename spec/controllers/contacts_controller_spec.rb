@@ -25,6 +25,21 @@ describe ContactsController do
         response.should redirect_to new_contact_path
       end
     end
+    context "without an email" do
+      let(:contact_info_hash) { 
+        {:name => "Foo Barina"}
+      }
+      before do
+        post :create, :contact => contact_info_hash
+      end
+      it "sets an error but no notice" do
+        flash[:notice].should be_nil
+        flash[:error].should_not be_nil
+      end
+      it "redirects to new" do
+        response.should redirect_to new_contact_path
+      end
+    end
   end
   describe "index" do
     before do
