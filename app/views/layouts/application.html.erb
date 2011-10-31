@@ -7,22 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
   <body>
-
-    <% if flash[:notice] || flash[:error] %>
-      <div class="flash">
-        <% if flash[:notice] %>
-          <div class="notice">
-            <%= flash[:notice] %>
-          </div>
-        <% elsif flash[:error] %>
-          <div class="error">
-            <%= flash[:error] %>
-          </div>
-        <% end %>
+    <% if flash[:notice] %>
+      <div class="notice">
+        <%= flash[:notice] %>
       </div>
-    <% end %>
+      <% elsif flash[:error] %>
+        <div class="error">
+          <%= flash[:error] %>
+        </div>
+      <% end %>
+    <div class="main">
+      <%= yield %>
+    </div>
 
-    <%= yield %>
-
+    <ul class="nav">
+      <li><%=link_to "Entry", root_path%></li>
+      <li><%=link_to "Rolodex", contacts_path%></li>
+    </ul>
   </body>
 </html>

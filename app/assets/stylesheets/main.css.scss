@@ -1,0 +1,117 @@
+
+$bodyBkgd: #5374AD;
+$mainBkgd: #2552A1;
+$highlight: #A6C0ED;
+$textBlue: #0A162B;
+$baseRadius: 10px;
+
+$textGreen: #162B0A;
+$highlightGreen: #C0EDA6;
+$bodyGreen: #74AD53;
+$mainGreen: #52A125;
+
+$bodyRed: #AD5353;
+$mainRed: #A12525;
+$highlightRed: #EDA6A6;
+$textRed: #2B0A0A;
+
+.notice, .error {
+  margin: 0 auto;
+  width: 300px;
+  // padding: 10px;
+  text-align: center;
+  // -webkit-border-radius: $baseRadius;
+  font-weight: bold;
+}
+
+.notice {
+  // border: 1px solid $highlightGreen;
+  background: $bodyGreen;
+  color: $textGreen;
+  -webkit-box-shadow: 0 0 8px 10px $bodyGreen;  
+}
+
+.error {
+  // border: 1px solid $highlightRed;
+  background: $mainRed;
+  color: $textRed;  
+  -webkit-box-shadow: 0 0 8px 10px $mainRed;
+}
+
+
+body {
+  background: $bodyBkgd;
+  font-family: "Trebuchet MS";
+  padding: 50px;
+}
+
+.main {
+  text-align: center;
+  background: $mainBkgd;
+  color: $textBlue;
+  margin: 50px auto;
+  width: 500px;
+  -webkit-border-radius: $baseRadius;
+  border: 1px solid $highlight;
+
+  form {
+    .field {
+      label {
+        display: inline-block;
+        width: 45px;
+        text-transform: lowercase;
+        padding: 10px;
+        &:after {
+          content: ":";
+        }
+      }
+      input[type="text"] {
+        -webkit-border-radius: 8px;
+        border: 2px solid $highlight;
+        padding: 2px;
+      }
+    }
+    input[type="submit"] {
+      $radius: 15px;
+      text-align: center;
+      padding: 0;
+      margin: 20px;
+      height: 2*$radius;
+      min-width: 2*$radius;
+      -webkit-border-radius: $radius;
+      font-size: 1.2*$radius;
+      font-weight: bold;
+      background: $textBlue;
+      border: 2px solid $highlight;
+      color: $highlight;
+    }
+  }
+}
+ul.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  li {
+    $totalHeight: 40px;
+    $padding: 12px;
+    background: $textBlue;
+    list-style: none;
+    display: inline-block;
+    width: 70px;
+    height: $totalHeight - 2*$padding;
+    padding: $padding;
+    margin: 0 10px;
+    -webkit-border-radius: $totalHeight/2;
+    border: 1px solid $highlight;
+    color: $highlight;
+    font-size: 14px;
+    &a {
+      color: $highlight;
+      text-decoration: none;
+      &:visited {
+        color: $highlight;
+      }
+    }
+  }
+}
+

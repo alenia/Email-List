@@ -1,6 +1,9 @@
 %h2 Add a Contact
 =form_for Contact.new do |f|
-  =f.text_field :name
-  =f.text_field :email
+  .field
+    =f.label :name
+    =f.text_field :name
+  .field
+    =f.label :email
+    =f.text_field :email
   =f.submit "+"
-=link_to "Rolodex", contacts_path
