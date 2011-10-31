@@ -10,10 +10,10 @@ end
 
 gem 'jquery-rails'
 
-gem "bundler"
+gem "bundler", "1.0.21"
 gem "auto_tagger", "0.2.3"
 gem "json", "1.4.6"
-gem "heroku"
+gem "heroku", "2.11.0"
 gem "pg", "0.11.0"
 gem "haml", "~> 3.1.3"
 gem "haml-rails", "~> 0.3.4"
