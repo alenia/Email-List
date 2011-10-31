@@ -26,12 +26,14 @@ $textRed: #2B0A0A;
   background: $bodyGreen;
   color: $textGreen;
   -webkit-box-shadow: 0 0 8px 10px $bodyGreen;  
+  -moz-box-shadow: 0 0 8px 10px $bodyGreen;  
 }
 
 .error {
   background: $mainRed;
   color: $textRed;  
   -webkit-box-shadow: 0 0 8px 10px $mainRed;
+  -moz-box-shadow: 0 0 8px 10px $mainRed;
 }
 
 
@@ -48,9 +50,23 @@ body {
   margin: 50px auto;
   width: 500px;
   -webkit-border-radius: $baseRadius;
+  -moz-border-radius: $baseRadius;
   border: 1px solid $highlight;
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
 
   form {
+    .fields {
+      float: left;
+      padding-bottom: 30px;
+      padding-left: 30px;
+    }
     .field {
       label {
         display: inline-block;
@@ -63,18 +79,21 @@ body {
       }
       input[type="text"] {
         -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
         border: 2px solid $highlight;
         padding: 2px;
+        width: 250px;
       }
     }
     input[type="submit"] {
       $radius: 15px;
       text-align: center;
       padding: 0;
-      margin: 20px;
+      margin: 25px;
       height: 2*$radius;
       min-width: 2*$radius;
       -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
       font-size: 1.2*$radius;
       font-weight: bold;
       background: $textBlue;
@@ -98,6 +117,7 @@ ul.nav {
     padding: $padding;
     margin: 0 10px;
     -webkit-border-radius: $totalHeight/2;
+    -moz-border-radius: $totalHeight/2;
     border: 1px solid $highlight;
     color: $highlight;
     font-size: 14px;

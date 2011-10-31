@@ -1,9 +1,10 @@
 %h2 Add a Contact
 =form_for Contact.new do |f|
-  .field
-    =f.label :name
-    =f.text_field :name
-  .field
-    =f.label :email
-    =f.text_field :email
+  .fields
+    .field
+      =f.label :name
+      =f.text_field :name
+    .field
+      =f.label :email
+      =f.text_field :email
   =f.submit "+"
