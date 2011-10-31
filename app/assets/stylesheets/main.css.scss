@@ -18,21 +18,17 @@ $textRed: #2B0A0A;
 .notice, .error {
   margin: 0 auto;
   width: 300px;
-  // padding: 10px;
   text-align: center;
-  // -webkit-border-radius: $baseRadius;
   font-weight: bold;
 }
 
 .notice {
-  // border: 1px solid $highlightGreen;
   background: $bodyGreen;
   color: $textGreen;
   -webkit-box-shadow: 0 0 8px 10px $bodyGreen;  
 }
 
 .error {
-  // border: 1px solid $highlightRed;
   background: $mainRed;
   color: $textRed;  
   -webkit-box-shadow: 0 0 8px 10px $mainRed;
