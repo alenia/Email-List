@@ -20,7 +20,7 @@ gem "haml-rails", "~> 0.3.4"
 
 group :development, :test do
   gem 'rspec-rails', '2.6.1'
-  gem 'jasmine', '1.1.0'
+  gem 'jasmine', :git => 'git://github.com/pivotal/jasmine-gem.git', :branch => '1.2.rc1'
   gem "headless", "0.1.0"
   gem "awesome_print"
   gem 'cucumber-rails', '1.0.4'
