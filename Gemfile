@@ -4,7 +4,7 @@ gem 'rails', '3.1.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'coffee-rails', '~> 3.1.0'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -18,9 +18,12 @@ gem "pg", "0.11.0"
 gem "haml", "~> 3.1.3"
 gem "haml-rails", "~> 0.3.4"
 
-group :development, :test do
+group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'jasmine', :git => 'git://github.com/pivotal/jasmine-gem.git', :branch => '1.2.rc1'
+end
+
+group :development, :test do
   gem "headless", "0.1.0"
   gem "awesome_print"
   gem 'cucumber-rails', '1.0.4'
@@ -33,7 +36,4 @@ group :development do
   
 end
 
-group :test do
-  
-end
 
